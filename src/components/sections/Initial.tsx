@@ -1,6 +1,5 @@
 import { Check } from "@phosphor-icons/react";
-import Button from '@mui/material/Button';
-import { ButtonBase } from "@mui/material";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import MyButton from "../MyButton";
 
 interface InitialProps{
@@ -10,19 +9,18 @@ interface InitialProps{
 // Foco no desenvolvimento contínuo
 const Initial: React.FC<InitialProps> = () => {
     return(
-        <section className="grid-cols-1 lg:grid-cols-2 grid place-items-center overflow-hidden bg-[#455D73] p-12 space-x-32 text-amber-50">
+        <section className="grid-cols-1 lg:grid-cols-2 grid place-items-center overflow-hidden bg-[#13678A] p-12 space-x-32 text-amber-50">
             <div>
                 <div>
                     <h1 className="text-lg font-bold">
-                        ----------------------------------------
+                        
                     </h1>
                     <h1 className="text-4xl font-bold">
                         Hello World
                     </h1>
                     <h1 className="text-lg font-bold">
-                        ----------------------------------------
+                        
                     </h1>
-                    
                     <h2>
                         Sejam bem vindos 
                     </h2>

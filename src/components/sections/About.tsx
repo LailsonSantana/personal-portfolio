@@ -1,4 +1,6 @@
 import SectionTitle from "../SectionTitle";
+import ReactPlayer from 'react-player';
+import VideoPlayer from "../YoutubeVideo";
 
 interface AboutProps{
 
@@ -6,14 +8,18 @@ interface AboutProps{
 
 const About: React.FC<AboutProps> = () => {
     return(
-        <section className="bg-[#84A9BF] p-4">
+        <section className="bg-[#45C4B0] p-4">
             <SectionTitle section="Sobre"/>
             <div className="container grid grid-cols-1 lg:grid-cols-2 mt-4 place-items-center">
-                <div className="w-120 h-80">
-                    <img src="myphoto.jpeg" className=" w-full h-full" alt="Lailson Santana"/>
+                
+                <div>
+                    <h2 className="flex text-2xl font-bold justify-center mb-2">Vídeo de Apresentação</h2>
+                    <VideoPlayer />
                 </div>
+                
 
-                <div className="w-120 h-80 mt-24">
+                <div className="w-120 h-80 ">
+                <h2 className="flex text-2xl font-bold mb-4 justify-center">Breve descrição</h2>
                     <p className="text-justify">
                         Natural de Brumado, mas atualmente morando em Vitória da Conquista-BA, Lailson 
                         iniciou sua caminhada na área da programação um pouco antes de ingressar na faculdade
