@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react';
-import Link from 'next/link';
 
 interface MenuProps{
 
@@ -10,8 +9,18 @@ interface MenuProps{
 const Menu: React.FC<MenuProps> = () => {
     return (
         
-        <nav className="bg-orange-950 border-gray-200 dark:border-gray-600 dark:bg-dark-backgroundHeaderAndFooter">
+        <nav className="bg-[#010D26] dark:border-gray-600 dark:bg-dark-backgroundHeaderAndFooter">
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2">
+
+                <div className='flex flex-col text-white'>
+                    <div className='font-bold text-3xl'>
+                        Lailson Santana
+                    </div>
+                    <div className='text-md'>
+                        Desenvolvedor Backend
+                    </div>
+                </div>
+                
 
                 <div id="mega-menu-full" className="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1">
                     <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">

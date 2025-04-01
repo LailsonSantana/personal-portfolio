@@ -22,7 +22,7 @@ const Template: React.FC<TemplateProps> = ({children}) => {
 
 const Header: React.FC = () => {
     return(
-        <div className="border-y-2 border-orange-700">
+        <div className="shadow-lg">
             <Menu/>
         </div>
     )
