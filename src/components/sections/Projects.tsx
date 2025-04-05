@@ -65,7 +65,7 @@ const Project: React.FC<ProjectProps> = () => {
         emblaApi?.scrollNext();
     }
     return(
-        <section className="bg-[#45C4B0] p-12">
+        <section className="bg-[#E6E5DE] p-12">
             <SectionTitle section="Projetos"/>
             <div className="relative">
             <div className="overflow-hidden mt-6" ref={emblaRef}>
@@ -90,7 +90,7 @@ const Project: React.FC<ProjectProps> = () => {
                                 <div className="border-t border-gray-700 pt-4 flex items-center justify-between" >
                                     <div className="flex items-center gap-2 text-sm ">
                                         <Calendar className="w-4 h-4" />
-                                        <span>Finalizado em: {item.finishedDate}</span>
+                                        <span>Data de conclusão : {item.finishedDate}</span>
                                     </div>
 
                                     <a href={item.link} className="flex items-center justify-center px-4 py-1 rounded-md">

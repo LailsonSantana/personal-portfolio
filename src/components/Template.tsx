@@ -1,6 +1,7 @@
 'use client'
 
 import Menu from "./Menu"
+import Navbar from "./Navbar"
 
 interface TemplateProps{
     children: React.ReactNode
@@ -22,8 +23,8 @@ const Template: React.FC<TemplateProps> = ({children}) => {
 
 const Header: React.FC = () => {
     return(
-        <div className="shadow-lg">
-            <Menu/>
+        <div >
+            <Navbar />
         </div>
     )
 }

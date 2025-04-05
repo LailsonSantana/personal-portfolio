@@ -9,7 +9,7 @@ interface InitialProps{
 // Foco no desenvolvimento contínuo
 const Initial: React.FC<InitialProps> = () => {
     return(
-        <section className="grid-cols-1 lg:grid-cols-2 grid place-items-center overflow-hidden bg-[#13678A] p-12 space-x-32 text-amber-50">
+        <section className="grid-cols-1 lg:grid-cols-2 grid place-items-center overflow-hidden bg-[#E6E5DE] p-12 space-x-32 text-black">
             <div>
                 <div>
                     <h1 className="text-lg font-bold">
@@ -74,7 +74,7 @@ const Initial: React.FC<InitialProps> = () => {
 
             <div className="flex flex-col space-y-8 justify-center">
                 <div className="w-60 h-60">
-                    <img src="myphoto.jpeg" className="rounded-full border-4 border-double"/>
+                    <img src="myphoto.jpeg" className="rounded-full border-2 border-solid"/>
                 </div>
 
                 <MyButton />
