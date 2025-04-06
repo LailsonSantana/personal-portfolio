@@ -5,7 +5,7 @@ interface SectionTitleProps{
 const SectionTitle: React.FC<SectionTitleProps> = ({section}) => {
     return(
         <div className="flex justify-center">
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-6xl font-bold">
                 {section}
             </h1>
         </div>

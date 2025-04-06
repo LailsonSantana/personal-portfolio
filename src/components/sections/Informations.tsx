@@ -1,26 +1,17 @@
 import { Check } from "@phosphor-icons/react";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import MyButton from "../MyButton";
 
-interface InitialProps{
+interface InformationProps{
 
 }
 // Em busca de novos desafios
 // Foco no desenvolvimento contínuo
-const Initial: React.FC<InitialProps> = () => {
+const Information: React.FC<InformationProps> = () => {
     return(
         <section className="grid-cols-1 lg:grid-cols-2 grid place-items-center overflow-hidden bg-[#E6E5DE] p-12 space-x-32 text-black">
             <div>
                 <div>
-                    <h1 className="text-lg font-bold">
-                        
-                    </h1>
-                    <h1 className="text-4xl font-bold">
-                        Hello World
-                    </h1>
-                    <h1 className="text-lg font-bold">
-                        
-                    </h1>
+
                     <h2>
                         Sejam bem vindos 
                     </h2>
@@ -85,4 +76,4 @@ const Initial: React.FC<InitialProps> = () => {
     )
 }
 
-export default Initial;
+export default Information;

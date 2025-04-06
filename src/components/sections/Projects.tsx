@@ -16,28 +16,33 @@ const items = [
         description : "Uma landing page para inclusão de informações profissionais , um portifílio online",
         link: "",
         icon: <WebIcon fontSize="large" className="text-white" />,
-        finishedDate: "Em andamento"
+        finishedDate: "Em andamento",
+        image: "front.png"
+
     },
     {
         project: "Question Hub",
         description: "Uma plataforma educativa online para criação de questões, criada como trabalho de conclusão de curso(TCC)",
         link: "https://github.com/LailsonSantana/question_hub",
         icon: <QuizIcon fontSize="large" className="text-white" />,
-        finishedDate: "20/04/2025"
+        finishedDate: "20/04/2025",
+        image: "front.png"
     },
     {
         project : "Fluxograma Interativo",
         description : "Um fluxograma interativo para verificação de disciplinas e pré requisitos",
         link: "https://github.com/LailsonSantana/interactive-flowchart",
         icon: <AccountTreeIcon fontSize="large" className="text-white" />,
-        finishedDate: "01/03/2025"
+        finishedDate: "01/03/2025",
+        image: "front.png"
     },
     {
         project : "Jantar dos Filósofos",
         description : "Execução visual do problema clássico de programação concorrente chamado jantar dos filósofos",
         link: "https://github.com/LailsonSantana/Programacao_Concorrente/tree/main/pc_trabalho05_201911924",
         icon: <RestaurantIcon fontSize="large" className="text-white" />,
-        finishedDate: "23/05/2021"
+        finishedDate: "23/05/2021",
+        image: "front.png"
     },
     
 ]
@@ -67,7 +72,7 @@ const Project: React.FC<ProjectProps> = () => {
     return(
         <section className="bg-[#E6E5DE] p-12">
             <SectionTitle section="Projetos"/>
-            <div className="relative">
+            <div className="relative mt-12">
             <div className="overflow-hidden mt-6" ref={emblaRef}>
                 <div className="flex">
                     {items.map((item, index) => (
@@ -87,6 +92,11 @@ const Project: React.FC<ProjectProps> = () => {
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className="rounded-b-lg">
+                                    <img src={item.image} className="rounded-2xl"/>
+                                </div>
+
                                 <div className="border-t border-gray-700 pt-4 flex items-center justify-between" >
                                     <div className="flex items-center gap-2 text-sm ">
                                         <Calendar className="w-4 h-4" />

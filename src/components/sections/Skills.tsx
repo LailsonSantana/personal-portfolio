@@ -5,24 +5,29 @@ import SchoolIcon from '@mui/icons-material/School';
 import BuildIcon from '@mui/icons-material/Build';
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
+import ContainerSkills from "../containers/ContainerSkills";
 
-interface KnowledgeProps{
+interface SkillsProps{
 
 }
 
-const Knowledge: React.FC<KnowledgeProps> = () => {
+const Skills: React.FC<SkillsProps> = () => {
     return(
-        <section className="bg-[#13678A] p-4 text-white">
-            <SectionTitle section="Conhecimentos"/>
-            <div className="grid grid-cols-1 lg:grid-cols-4 mt-16 font-bold text-lg text-[#DAFDBA]">
-                <div className="flex flex-col items-center gap-1 ">
+        <section className="bg-[#010F22] p-4 text-white">
+            <SectionTitle section="Habilidades"/>
+            <div className="grid grid-cols-1 lg:grid-cols-4 mt-16 font-bold text-lg text-[#DAFDBA] gap-4">
+                <ContainerSkills>
                     <DeveloperModeIcon fontSize="large" />
                     <span>Frontend</span>
                     
-                    <ul>
+                    <div className="flex flex-col items-center justify-center">
+                    <div className="w-70 h-70">
+                    <img src="front.png" className="opacity-10"/>
+                    </div>
+                    <ul className="flex mt-4">
                         <li className="flex items-center gap-1">
                             <ArrowRightIcon fontSize="large" />
-                            <span>React</span>
+                            <span className="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-gray-700 dark:text-red-400 border border-red-400">React</span>
                         </li>
                         <li className="flex items-center gap-1">
                             <ArrowRightIcon fontSize="large" />
@@ -37,9 +42,10 @@ const Knowledge: React.FC<KnowledgeProps> = () => {
                             <span>HTML</span>
                         </li>
                     </ul>
-                </div>
+                    </div>
+                </ContainerSkills>
 
-                <div className="flex flex-col items-center gap-1">
+                <ContainerSkills>
                     <StorageIcon fontSize="large"/>
                     <span>Backend</span>
                     <ul >
@@ -56,9 +62,9 @@ const Knowledge: React.FC<KnowledgeProps> = () => {
                             <span>Python</span>
                         </li>
                     </ul>
-                </div>
+                </ContainerSkills>
 
-                <div className="flex flex-col items-center gap-1">
+                <ContainerSkills>
                     <SettingsApplicationsIcon fontSize="large"  />
                     <span>DevOps</span>
                     <ul >
@@ -71,9 +77,9 @@ const Knowledge: React.FC<KnowledgeProps> = () => {
                             <span>Docker</span>
                         </li>
                     </ul>
-                </div>
+                </ContainerSkills>
 
-                <div className="flex flex-col items-center gap-1">
+                <ContainerSkills>
                     <SchoolIcon fontSize="large" />
                     <span>Cursos</span>
                     <ul>
@@ -86,10 +92,10 @@ const Knowledge: React.FC<KnowledgeProps> = () => {
                             <span>Spring</span>
                         </li>
                     </ul>
-                </div>
+                </ContainerSkills>
             </div>
         </section>
     )
 }
 
-export default Knowledge;
+export default Skills;

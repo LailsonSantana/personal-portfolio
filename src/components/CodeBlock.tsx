@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import ContainerCode from './containers/ContainerCode';
+import CloseIcon from '@mui/icons-material/Close';
 
 interface CodeProps{
     fullCode: string
@@ -76,15 +78,21 @@ const CodePresentation: React.FC<CodeProps> = ({fullCode} : CodeProps) => {
 
   return (
     
-        <div className="bg-[#1e1e1e] rounded-lg overflow-hidden shadow-xl w-full max-w-2xl m-16 font-arial">
+        <ContainerCode>
           {/* Barra de menu do IDE */}
-          <div className="bg-[#252526] flex items-center px-4 py-2 border-b border-[#333]">
-            <div className="flex space-x-2 mr-4">
-              <span className="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
-              <span className="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
-              <span className="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+          <div className="bg-[#252526] flex px-4 py-2 border-b border-[#333]">
+            <div className='w-1/2 flex items-center'>
+              <div className="flex space-x-2 mr-4">
+                <span className="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+                <span className="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+                <span className="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+              </div>
+              <div className="text-sm text-gray-400">profile.js</div>
             </div>
-            <div className="text-sm text-gray-400">profile.js</div>
+            <span className='flex justify-end w-1/2'>
+              <CloseIcon fontSize="small" />
+            </span>
+            
           </div>
     
           {/* Área do código com números de linha */}
@@ -99,7 +107,7 @@ const CodePresentation: React.FC<CodeProps> = ({fullCode} : CodeProps) => {
             </div>
     
             {/* Código animado */}
-            <pre className="flex-1 overflow-x-auto py-2 pl-2 text-[#d4d4d4] font-mono text-sm">
+            <pre className="flex-1 overflow-x-auto py-2 pl-2 text-[#d4d4d4]">
               {displayedLines.map((line, i) => (
                 <div key={i} className="h-6 leading-6">
                   {i === displayedLines.length - 1 ? (
@@ -121,7 +129,7 @@ const CodePresentation: React.FC<CodeProps> = ({fullCode} : CodeProps) => {
             <span>JavaScript</span>
             <span>Ln {displayedLines.length}, Col {displayedLines[displayedLines.length - 1]?.length || 0}</span>
           </div>
-        </div>
+          </ContainerCode>
       );
     
 };
