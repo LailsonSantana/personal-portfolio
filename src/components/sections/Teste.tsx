@@ -34,17 +34,17 @@ const Teste: React.FC<TesteProps> = () => {
                     
                     <div className="flex gap-4 mt-4 p-4">
                         <Button variant="outlined" size="small"
-                        sx={{ color: 'white', borderColor: 'white', '&:hover': { borderColor: 'gray.300' } }}
+                        sx={{ color: 'white', borderColor: 'white', minWidth: '150px', '&:hover': { borderColor: 'gray.300' } }}
                         className="flex gap-1 m-auto text-white lg:w-full">
                             <DownloadIcon fontSize="small"/>
                             <span>Download CV</span>
                         </Button>
 
                         <Button variant="outlined" size="small"
-                        sx={{ color: 'white', borderColor: 'white', '&:hover': { borderColor: 'gray.300' } }}
+                        sx={{ color: 'white', borderColor: 'white', padding:"16px" , minWidth: '150px', '&:hover': { borderColor: 'gray.300' } }}
                         className="flex gap-1 m-auto text-white lg:w-full">
                             <EmailIcon fontSize="small"/>
-                            <span>Entre em contato</span>
+                            <span>Fale comigo</span>
                         </Button>
 
                     </div>

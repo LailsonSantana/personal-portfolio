@@ -1,11 +1,11 @@
 'use client'
 
-import Menu from "./Menu"
 import Navbar from "./Navbar"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 interface TemplateProps{
     children: React.ReactNode
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
 
 const Footer: React.FC = () => {
     return(
-        <footer className="grid cols-1 md:grid-cols-2 lg: grid-cols-3 gap-8 bg-[#012030] text-white">
+        <footer className="grid cols-1 md:grid-cols-2 lg: grid-cols-3 gap-8 bg-[#010F22] text-white">
             <div className="flex items-center ml-4">
             © 2025 Lailson Santana . All rights reserved.
             </div>
@@ -50,9 +50,12 @@ const Footer: React.FC = () => {
                             <a href="https://github.com/LailsonSantana" target="_blank" rel="noopener noreferrer">
                                 <WhatsAppIcon fontSize="large" />
                             </a>
-                            <a href="https://github.com/LailsonSantana" target="_blank" rel="noopener noreferrer">
-                                <EmailIcon fontSize="large" />
+                            {/*<button className="fixed bottom-0 right-4 z-50 flex flex-col justify-center items-center rounded-full p-2 border border-gray-700 bg-red-500 shadow-md hover:bg-gray-100 transition">
+                            <a href="#top" aria-label="Voltar ao topo">
+                                <ArrowUpwardIcon fontSize="medium"/>
                             </a>
+                            </button>*/}
+
                         </div>
         </footer>
     )

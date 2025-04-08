@@ -17,7 +17,7 @@ const items = [
         link: "",
         icon: <WebIcon fontSize="large" className="text-white" />,
         finishedDate: "Em andamento",
-        image: "front.png"
+        image: "port.png"
 
     },
     {
@@ -34,7 +34,7 @@ const items = [
         link: "https://github.com/LailsonSantana/interactive-flowchart",
         icon: <AccountTreeIcon fontSize="large" className="text-white" />,
         finishedDate: "01/03/2025",
-        image: "front.png"
+        image: "flux.png"
     },
     {
         project : "Jantar dos Filósofos",
@@ -70,15 +70,15 @@ const Project: React.FC<ProjectProps> = () => {
         emblaApi?.scrollNext();
     }
     return(
-        <section className="bg-[#010F22] p-12 font-white">
+        <section className="bg-[#010F22] p-12 text-white">
             <SectionTitle section="Projetos"/>
             <div className="relative mt-12">
             <div className="overflow-hidden mt-6" ref={emblaRef}>
                 <div className="flex">
                     {items.map((item, index) => (
                         <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
-                            <article className="bg-[#D4E2F6] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
-                                <div className="flex-1 flex itms-start justify-between">
+                            <article className="bg-[#010421] text-white rounded-2xl p-6 gap-2 h-full flex flex-col border border-gray-700">
+                                <div className="flex-1 flex items-start justify-between">
                                     <div className="flex gap-3">
                                         <span className="text-3xl">
                                             {item.icon}
@@ -93,8 +93,8 @@ const Project: React.FC<ProjectProps> = () => {
                                     </div>
                                 </div>
 
-                                <div className="rounded-b-lg">
-                                    <img src={item.image} className="rounded-2xl"/>
+                                <div className="rounded-b-lg flex bg-amber-700">
+                                    <img src={item.image} className="rounded-2xl shadow-2xl"/>
                                 </div>
 
                                 <div className="border-t border-gray-700 pt-4 flex items-center justify-between" >

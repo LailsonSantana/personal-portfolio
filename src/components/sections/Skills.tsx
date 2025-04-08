@@ -16,7 +16,7 @@ const Skills: React.FC<SkillsProps> = () => {
     return(
         <section className="bg-[#010F22] p-4 text-white">
             <SectionTitle section="Habilidades"/>
-            <div className="mt-8">
+            <div className="mt-8 ">
                 <InfiniteScroll />
             </div>
             

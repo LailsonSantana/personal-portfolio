@@ -10,7 +10,7 @@ const DescriptionCode: React.FC<DescriptionCodeProps> = ({text} : DescriptionCod
         
         <ContainerCode>
 
-          <div className="bg-[#252526] px-4 py-2 flex border-b border-[#333]">
+          <div className="bg-[#010421] px-4 py-2 flex border-b border-[#333]">
             <div className="flex items-center w-1/2">
               <div className="flex space-x-2 mr-4">
                 <span className="w-3 h-3 rounded-full bg-[#ff5f56]"/>

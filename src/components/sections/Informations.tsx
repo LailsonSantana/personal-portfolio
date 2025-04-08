@@ -17,9 +17,7 @@ const Information: React.FC<InformationProps> = () => {
 
             
                 <div className="flex items-center">
-                <span className="text-3xl font-extrabold tracking-widest uppercase text-gray-700">
-                    |
-                </span>
+                
 
                 <h2 className="font-medium text-4xl">
                     Objetivos 

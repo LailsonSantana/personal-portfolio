@@ -37,7 +37,7 @@ const description = `Iniciei minha caminhada na área da programação um pouco 
 
 const About: React.FC<AboutProps> = () => {
     return(
-        <section className="bg-[#F2F2F2] p-4">
+        <section className="bg-[#F2F2F2] p-4 text-black">
             <SectionTitle section="Sobre"/>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center">

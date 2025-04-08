@@ -80,7 +80,7 @@ const CodePresentation: React.FC<CodeProps> = ({fullCode} : CodeProps) => {
     
         <ContainerCode>
           {/* Barra de menu do IDE */}
-          <div className="bg-[#252526] flex px-4 py-2 border-b border-[#333]">
+          <div className="bg-[#010421] flex px-4 py-2 border-b border-[#333]">
             <div className='w-1/2 flex items-center'>
               <div className="flex space-x-2 mr-4">
                 <span className="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
@@ -98,7 +98,7 @@ const CodePresentation: React.FC<CodeProps> = ({fullCode} : CodeProps) => {
           {/* Área do código com números de linha */}
           <div className="flex">
             {/* Números das linhas */}
-            <div className="bg-[#1e1e1e] text-gray-500 text-right pr-3 py-2 select-none ml-4">
+            <div className="bg-[#010F22] text-gray-500 text-right pr-3 py-2 select-none ml-4">
               {Array.from({ length: Math.max(displayedLines.length, totalLines) }).map((_, i) => (
                 <div key={i} className="h-6 leading-6">
                   {i + 1}
