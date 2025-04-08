@@ -1,10 +1,8 @@
 import SectionTitle from "../SectionTitle";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CodePresentation from "../CodeBlock";
 import DescriptionCode from "../DescriptionCode";
+import InfiniteScroll from "../teste/Rolagem";
+import FlowingMenu from "../teste/FlowingMenu";
 
 interface AboutProps{
 
@@ -39,7 +37,7 @@ const description = `Iniciei minha caminhada na área da programação um pouco 
 
 const About: React.FC<AboutProps> = () => {
     return(
-        <section className="bg-[#E6E5DE] p-4">
+        <section className="bg-[#F2F2F2] p-4">
             <SectionTitle section="Sobre"/>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center">
@@ -53,21 +51,11 @@ const About: React.FC<AboutProps> = () => {
                 
             </div>
 
-            <div className="flex gap-8 p-4 items-center justify-center">
-                <a href="https://www.linkedin.com/in/lailson-santana-dev/" target="_blank" rel="noopener noreferrer">
-                    <LinkedInIcon fontSize="large" />
-                </a>
-                <a href="https://github.com/LailsonSantana" target="_blank" rel="noopener noreferrer">
-                    <GitHubIcon fontSize="large" />
-                </a>
-                <a href="https://github.com/LailsonSantana" target="_blank" rel="noopener noreferrer">
-                    <WhatsAppIcon fontSize="large" />
-                </a>
-                <a href="https://github.com/LailsonSantana" target="_blank" rel="noopener noreferrer">
-                    <EmailIcon fontSize="large" />
-                </a>
-            </div>
             
+
+            <InfiniteScroll />
+                    
+
             {/*<div className="container grid grid-cols-1 mt-4 place-items-center">
                 
                 <div>

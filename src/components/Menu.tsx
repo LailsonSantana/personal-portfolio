@@ -9,7 +9,7 @@ interface MenuProps{
 const Menu: React.FC<MenuProps> = () => {
     return (
         
-        <nav className="bg-[#010F22] dark:border-gray-600 dark:bg-dark-backgroundHeaderAndFooter shadow-2xl">
+        <nav className="bg-[#dce0eb] dark:border-gray-600 dark:bg-dark-backgroundHeaderAndFooter shadow-2xl">
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2">
 
                 <div className='flex flex-col text-white'>

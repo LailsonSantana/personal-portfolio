@@ -6,6 +6,7 @@ import BuildIcon from '@mui/icons-material/Build';
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import ContainerSkills from "../containers/ContainerSkills";
+import InfiniteScroll from "../teste/Rolagem";
 
 interface SkillsProps{
 
@@ -15,6 +16,11 @@ const Skills: React.FC<SkillsProps> = () => {
     return(
         <section className="bg-[#010F22] p-4 text-white">
             <SectionTitle section="Habilidades"/>
+            <div className="mt-8">
+                <InfiniteScroll />
+            </div>
+            
+            {/* 
             <div className="grid grid-cols-1 lg:grid-cols-4 mt-16 font-bold text-lg text-[#DAFDBA] gap-4">
                 <ContainerSkills>
                     <DeveloperModeIcon fontSize="large" />
@@ -94,6 +100,7 @@ const Skills: React.FC<SkillsProps> = () => {
                     </ul>
                 </ContainerSkills>
             </div>
+            */}
         </section>
     )
 }

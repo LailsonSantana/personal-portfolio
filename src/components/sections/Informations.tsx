@@ -1,5 +1,9 @@
 import { Check } from "@phosphor-icons/react";
-import MyButton from "../MyButton";
+import SectionTitle from "../SectionTitle";
+import TodayIcon from '@mui/icons-material/Today';
+import DateRangeIcon from '@mui/icons-material/DateRange';
+import SchoolIcon from '@mui/icons-material/School';
+import DecryptedText from "../teste/Decrypted";
 
 interface InformationProps{
 
@@ -8,70 +12,118 @@ interface InformationProps{
 // Foco no desenvolvimento contínuo
 const Information: React.FC<InformationProps> = () => {
     return(
-        <section className="grid-cols-1 lg:grid-cols-2 grid place-items-center overflow-hidden bg-[#E6E5DE] p-12 space-x-32 text-black">
-            <div>
-                <div>
+        <section className="flex flex-col overflow-hidden bg-[#E6E5DE] p-12 text-black">
+            <SectionTitle section="Mais Informações"/>
 
-                    <h2>
-                        Sejam bem vindos 
-                    </h2>
+            
+                <div className="flex items-center">
+                <span className="text-3xl font-extrabold tracking-widest uppercase text-gray-700">
+                    |
+                </span>
+
+                <h2 className="font-medium text-4xl">
+                    Objetivos 
+                </h2>
                 </div>
 
-                <div className="mt-8">
-                    <h2 className="font-bold mb-2">
-                        Objetivos Curto Prazo
-                    </h2>
-
-                    <ul className="space-y-2">
-                        <li className="flex items-center gap-2">
-                            <Check className="text-[#010D26]"/>
-                            Finalizar e apresentar meu trabalho de conclusão de curso (TCC)
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Check className="text-[#010D26]"/>
-                            Ingressar no mercado de trabalho
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Check className="text-[#010D26]"/>
-                            Iniciar o aprendizado de microservices no Spring Boot
-                        </li>
-                    </ul>
-                        
-                </div>
-
-                <div className="mt-8">
-                    <h2 className="font-bold mb-2">
-                        Objetivos Médio / Longo Prazo
-                    </h2>
-
-                    <ul className="space-y-2">
-                        <li className="flex items-center gap-2">
-                            <Check className="text-[#010D26]"/>
-                            Pós Graduação em Desenvolvimento Web
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Check className="text-[#010D26]"/>
-                            Aprimorar minha capacidade de entender e resolver problemas
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Check className="text-[#010D26]"/>
-                            Lançamento de uma plataforma para ensino e aprendizado da língua inglesa
-                        </li>
-                    </ul>
-                </div>
-
+                <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center border-b-2 p-4 text-black text-2xl font-thin">
                 
-            </div>
+                    <div className="mt-2">
+                        <h2 className="flex font-semibold text-2xl mb-2 gap-2">
+                            <TodayIcon fontSize="large" />
+                            Curto Prazo
+                        </h2>
 
-            <div className="flex flex-col space-y-8 justify-center">
-                <div className="w-60 h-60">
-                    <img src="myphoto.jpeg" className="rounded-full border-2 border-solid"/>
+                        <ul className="space-y-2 text-lg">
+                            <li className="flex items-center gap-2">
+                                <Check className="text-[#010D26]"/>
+                                Finalizar e apresentar meu trabalho de conclusão de curso (TCC)
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Check className="text-[#010D26]"/>
+                                Ingressar no mercado de trabalho
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Check className="text-[#010D26]"/>
+                                Iniciar o aprendizado de microservices no Spring Boot
+                            </li>
+                        </ul>
+                            
+                    </div>
+
+                    <div className="mt-8">
+                        <h2 className="flex font-semibold mb-2 text-2xl gap-2">
+                        <DateRangeIcon fontSize="large" />
+                            Médio / Longo Prazo
+                        </h2>
+
+                        <ul className="space-y-2 text-lg">
+                            <li className="flex items-center gap-2">
+                                <Check className="text-[#010D26]"/>
+                                Pós Graduação em Desenvolvimento Web
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Check className="text-[#010D26]"/>
+                                Aprimorar minha capacidade de entender e resolver problemas
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Check className="text-[#010D26]"/>
+                                Lançamento de uma plataforma para ensino e aprendizado da língua inglesa
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <MyButton />
-            </div>
+                <h2 className="font-medium text-4xl mt-4">
+                    Cursos
+                </h2>
 
-              
+                <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center border-b-2 p-4 text-black text-2xl font-thin">
+                    <div className="mt-2">
+                        
+                        <h2 className="flex font-semibold mb-2 text-2xl gap-2">
+                            <DateRangeIcon fontSize="large" />
+                            Finalizados
+                        </h2>
+                        <ul className="space-y-2 text-lg">
+                                <li className="flex items-center gap-2">
+                                    <Check className="text-[#010D26]"/>
+                                    Finalizar e apresentar meu trabalho de conclusão de curso (TCC)
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Check className="text-[#010D26]"/>
+                                    Ingressar no mercado de trabalho
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Check className="text-[#010D26]"/>
+                                    Iniciar o aprendizado de microservices no Spring Boot
+                                </li>
+                            </ul>
+                    </div>
+
+
+                    <div className="mt-8">
+                        
+                        <h2 className="flex font-semibold mb-2 text-2xl gap-2">
+                            <DateRangeIcon fontSize="large" />
+                            Em andamento
+                        </h2>
+                        <ul className="space-y-2 text-lg">
+                                <li className="flex items-center gap-2">
+                                    <Check className="text-[#010D26]"/>
+                                    Finalizar e apresentar meu trabalho de conclusão de curso (TCC)
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Check className="text-[#010D26]"/>
+                                    Ingressar no mercado de trabalho
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Check className="text-[#010D26]"/>
+                                    Iniciar o aprendizado de microservices no Spring Boot
+                                </li>
+                            </ul>
+                    </div>
+                </div>
         </section>
     )
 }

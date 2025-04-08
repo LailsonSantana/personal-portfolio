@@ -54,7 +54,7 @@ export default function Navbar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="absolute" elevation={10} sx={{ backgroundColor: '#012030' }}>
+            <AppBar position="absolute" elevation={10} sx={{ backgroundColor: '#010F22' }}>
                 <StyledMobileToolbar>
                     <IconButton
                         size="large"
@@ -78,6 +78,9 @@ export default function Navbar() {
                         onClose={handleClose}
                     >
                         <MenuItem onClick={() => handleSmoothScroll("about")}>
+                            <StyledNavLink>Home</StyledNavLink>
+                        </MenuItem>
+                        <MenuItem onClick={() => handleSmoothScroll("about")}>
                             <StyledNavLink>Sobre</StyledNavLink>
                         </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("skills")}>
@@ -89,6 +92,9 @@ export default function Navbar() {
                     </Menu>
                 </StyledMobileToolbar>
                 <StyledDesktopToolbar variant="regular">
+                <MenuItem onClick={() => handleSmoothScroll("home")}>
+                        <StyledNavLink>Home</StyledNavLink>
+                    </MenuItem>
                     <MenuItem onClick={() => handleSmoothScroll("about")}>
                         <StyledNavLink>Sobre</StyledNavLink>
                     </MenuItem>

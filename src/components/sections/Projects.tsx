@@ -70,14 +70,14 @@ const Project: React.FC<ProjectProps> = () => {
         emblaApi?.scrollNext();
     }
     return(
-        <section className="bg-[#E6E5DE] p-12">
+        <section className="bg-[#010F22] p-12 font-white">
             <SectionTitle section="Projetos"/>
             <div className="relative mt-12">
             <div className="overflow-hidden mt-6" ref={emblaRef}>
                 <div className="flex">
                     {items.map((item, index) => (
                         <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
-                            <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
+                            <article className="bg-[#D4E2F6] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                                 <div className="flex-1 flex itms-start justify-between">
                                     <div className="flex gap-3">
                                         <span className="text-3xl">

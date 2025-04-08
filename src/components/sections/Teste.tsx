@@ -2,11 +2,20 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
+import StarBorder from "../teste/StarBorder";
+
 
 
 interface TesteProps{
 
 }
+
+
+
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
+
 
 const Teste: React.FC<TesteProps> = () => {
     return(
@@ -37,6 +46,7 @@ const Teste: React.FC<TesteProps> = () => {
                             <EmailIcon fontSize="small"/>
                             <span>Entre em contato</span>
                         </Button>
+
                     </div>
                 </div>
             </section>
