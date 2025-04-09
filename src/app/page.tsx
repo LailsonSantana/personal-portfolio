@@ -1,7 +1,6 @@
 'use client'
 
 import About from "@/components/sections/About";
-import Contact from "@/components/sections/Contact";
 import Initial from "@/components/sections/Informations";
 import Knowledge from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
