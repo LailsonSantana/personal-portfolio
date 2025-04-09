@@ -37,7 +37,7 @@ const description = `Iniciei minha caminhada na área da programação um pouco 
 
 const About: React.FC<AboutProps> = () => {
     return(
-        <section className="bg-[#F2F2F2] p-4 text-black">
+        <section id="about" className="bg-[#F2F2F2] p-4 text-black">
             <SectionTitle section="Sobre"/>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center">
@@ -52,9 +52,6 @@ const About: React.FC<AboutProps> = () => {
             </div>
 
             
-
-            <InfiniteScroll />
-                    
 
             {/*<div className="container grid grid-cols-1 mt-4 place-items-center">
                 

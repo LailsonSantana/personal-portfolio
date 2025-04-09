@@ -14,8 +14,30 @@ interface SkillsProps{
 
 const Skills: React.FC<SkillsProps> = () => {
     return(
-        <section className="bg-[#010F22] p-4 text-white">
+        <section id="skills" className="bg-[#010F22] p-4 text-white">
             <SectionTitle section="Habilidades"/>
+
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 place-items-center mt-12 font-thin text-lg">
+                <div>
+                    <h1 className="mb-2 font-semibold">Backend</h1>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Python</li>
+                </div>
+                <div>
+                    <h1 className="mb-2 font-semibold">Frontend</h1>
+                    <li>HTML e CSS</li>
+                    <li>React</li>
+                    <li>Tailwind</li>
+                </div>
+                <div>
+                    <h1 className="mb-2 font-semibold">DevOps</h1>
+                    <li>Git e Github</li>
+                    <li>Postgre SQL</li>
+                    <li>Docker</li>
+                </div>
+            </div>
+
             <div className="mt-8 ">
                 <InfiniteScroll />
             </div>

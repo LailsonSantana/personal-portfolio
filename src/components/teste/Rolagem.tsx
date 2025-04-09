@@ -7,6 +7,7 @@ const techs = [
   { name: "Java", icon: "mdi:language-java" },
   { name: "Spring Boot", icon: "simple-icons/springboot" },
   { name: "React", icon: "mdi:react" },
+  { name: "Github" , icon: "mdi:github" },
   { name: "Tailwind", icon: "simple-icons/tailwindcss" },
   { name: "TypeScript", icon: "mdi:language-typescript" },
   { name: "Node.js", icon: "mdi:nodejs" },

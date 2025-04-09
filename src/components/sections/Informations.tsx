@@ -2,6 +2,8 @@ import { Check } from "@phosphor-icons/react";
 import SectionTitle from "../SectionTitle";
 import TodayIcon from '@mui/icons-material/Today';
 import DateRangeIcon from '@mui/icons-material/DateRange';
+import ChecklistRtlIcon from '@mui/icons-material/ChecklistRtl';
+import PendingIcon from '@mui/icons-material/Pending';
 import SchoolIcon from '@mui/icons-material/School';
 import DecryptedText from "../teste/Decrypted";
 
@@ -12,7 +14,7 @@ interface InformationProps{
 // Foco no desenvolvimento contínuo
 const Information: React.FC<InformationProps> = () => {
     return(
-        <section className="flex flex-col overflow-hidden bg-[#E6E5DE] p-12 text-black">
+        <section id="Information" className="flex flex-col overflow-hidden bg-[#E6E5DE] p-12 text-black">
             <SectionTitle section="Mais Informações"/>
 
             
@@ -76,26 +78,27 @@ const Information: React.FC<InformationProps> = () => {
                     Cursos
                 </h2>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center border-b-2 p-4 text-black text-2xl font-thin">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center place-items-center border-b-2 p-4 text-black text-2xl font-thin">
                     <div className="mt-2">
                         
                         <h2 className="flex font-semibold mb-2 text-2xl gap-2">
-                            <DateRangeIcon fontSize="large" />
+                            <ChecklistRtlIcon fontSize="large" />
                             Finalizados
                         </h2>
                         <ul className="space-y-2 text-lg">
                                 <li className="flex items-center gap-2">
                                     <Check className="text-[#010D26]"/>
-                                    Finalizar e apresentar meu trabalho de conclusão de curso (TCC)
+                                    Inglês - KNN Brasil - 172h - Concluído em: 10/2024
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Check className="text-[#010D26]"/>
-                                    Ingressar no mercado de trabalho
+                                    Full Stack - Spring Boot + React JS - Udemy - Concluído em: 10/2024
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Check className="text-[#010D26]"/>
-                                    Iniciar o aprendizado de microservices no Spring Boot
+                                    Inglês - Access E2C English - 210h - Concluído em: 12/2023
                                 </li>
+                                
                             </ul>
                     </div>
 
@@ -103,21 +106,21 @@ const Information: React.FC<InformationProps> = () => {
                     <div className="mt-8">
                         
                         <h2 className="flex font-semibold mb-2 text-2xl gap-2">
-                            <DateRangeIcon fontSize="large" />
+                            <PendingIcon fontSize="large" />
                             Em andamento
                         </h2>
                         <ul className="space-y-2 text-lg">
                                 <li className="flex items-center gap-2">
                                     <Check className="text-[#010D26]"/>
-                                    Finalizar e apresentar meu trabalho de conclusão de curso (TCC)
+                                    Typescript
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Check className="text-[#010D26]"/>
-                                    Ingressar no mercado de trabalho
+                                    
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Check className="text-[#010D26]"/>
-                                    Iniciar o aprendizado de microservices no Spring Boot
+                                    
                                 </li>
                             </ul>
                     </div>

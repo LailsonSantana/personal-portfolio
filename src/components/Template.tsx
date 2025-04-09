@@ -35,9 +35,9 @@ const Header: React.FC = () => {
 
 const Footer: React.FC = () => {
     return(
-        <footer className="grid cols-1 md:grid-cols-2 lg: grid-cols-3 gap-8 bg-[#010F22] text-white">
+        <footer className="grid grid-cols-1 lg:grid-cols-2 place-items-center  bg-[#010F22] text-white">
             <div className="flex items-center ml-4">
-            © 2025 Lailson Santana . All rights reserved.
+                <p>© 2025 Lailson Santana . All rights reserved.</p>
             </div>
 
             <div className="flex gap-8 p-4 items-center justify-end mr-4">
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                             </a>
                             </button>*/}
 
-                        </div>
+            </div>
         </footer>
     )
 }

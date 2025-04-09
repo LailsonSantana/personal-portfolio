@@ -8,6 +8,7 @@ import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import WebIcon from '@mui/icons-material/Web';
 import QuizIcon from '@mui/icons-material/Quiz';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+import CasinoIcon from '@mui/icons-material/Casino';
 
 const items = [
 
@@ -26,7 +27,7 @@ const items = [
         link: "https://github.com/LailsonSantana/question_hub",
         icon: <QuizIcon fontSize="large" className="text-white" />,
         finishedDate: "20/04/2025",
-        image: "front.png"
+        image: "questionhub.png"
     },
     {
         project : "Fluxograma Interativo",
@@ -37,10 +38,10 @@ const items = [
         image: "flux.png"
     },
     {
-        project : "Jantar dos Filósofos",
-        description : "Execução visual do problema clássico de programação concorrente chamado jantar dos filósofos",
+        project : "Jogo de Apostas",
+        description : "Um jogo construído com o objetivo de aplicar o conceito de threads em java",
         link: "https://github.com/LailsonSantana/Programacao_Concorrente/tree/main/pc_trabalho05_201911924",
-        icon: <RestaurantIcon fontSize="large" className="text-white" />,
+        icon: <CasinoIcon fontSize="large" className="text-white" />,
         finishedDate: "23/05/2021",
         image: "front.png"
     },
@@ -70,15 +71,15 @@ const Project: React.FC<ProjectProps> = () => {
         emblaApi?.scrollNext();
     }
     return(
-        <section className="bg-[#010F22] p-12 text-white">
+        <section id="projects" className="bg-[#010F22] p-12 text-white">
             <SectionTitle section="Projetos"/>
             <div className="relative mt-12">
-            <div className="overflow-hidden mt-6" ref={emblaRef}>
+            <div className="overflow-hidden " ref={emblaRef}>
                 <div className="flex">
                     {items.map((item, index) => (
                         <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
-                            <article className="bg-[#010421] text-white rounded-2xl p-6 gap-2 h-full flex flex-col border border-gray-700">
-                                <div className="flex-1 flex items-start justify-between">
+                            <article className="bg-[#010421] text-white rounded-2xl p-6 gap-6 h-full flex flex-col border border-gray-700 justify-between">
+                                <div className=" flex items-start justify-between">
                                     <div className="flex gap-3">
                                         <span className="text-3xl">
                                             {item.icon}
@@ -93,8 +94,8 @@ const Project: React.FC<ProjectProps> = () => {
                                     </div>
                                 </div>
 
-                                <div className="rounded-b-lg flex bg-amber-700">
-                                    <img src={item.image} className="rounded-2xl shadow-2xl"/>
+                                <div className="rounded-md flex items-center justify-center">
+                                    <img src={item.image} className="rounded-md shadow-2xl max-w-full max-h-60 object-contain"/>
                                 </div>
 
                                 <div className="border-t border-gray-700 pt-4 flex items-center justify-between" >

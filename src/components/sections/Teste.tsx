@@ -1,26 +1,15 @@
-
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Button } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
-import StarBorder from "../teste/StarBorder";
-
-
 
 interface TesteProps{
 
 }
 
-
-
-const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
-};
-
-
 const Teste: React.FC<TesteProps> = () => {
     return(
-        <div className="flex flex-col bg-[#010F22] w-screen h-screen border-white border-t-2">
-            <section className="grid grid-cols-1 lg:flex items-center justify-center m-auto place-items-center">
+        <div  className="flex flex-col bg-[#010F22] w-screen h-screen border-white border-t-2">
+            <section id="home" className="grid grid-cols-1 lg:flex items-center justify-center m-auto place-items-center">
 
                 <div className="w-50 h-50 lg:w-70 lg:h-70 p-4">
                     <img src="myphoto.jpeg" className="rounded-full border-2 border-solid border-white"/>

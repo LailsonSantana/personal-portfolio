@@ -47,10 +47,10 @@ export default function Navbar() {
     const handleSmoothScroll = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-            handleClose();
+          element.scrollIntoView({ behavior: 'smooth' });
         }
-    };
+        handleClose(); // fecha o menu (se estiver aberto no mobile)
+      };
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -77,7 +77,7 @@ export default function Navbar() {
                         open={Boolean(anchorEl)}
                         onClose={handleClose}
                     >
-                        <MenuItem onClick={() => handleSmoothScroll("about")}>
+                        <MenuItem onClick={() => handleSmoothScroll("home")}>
                             <StyledNavLink>Home</StyledNavLink>
                         </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("about")}>
