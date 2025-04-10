@@ -24,14 +24,14 @@ const items = [
     {
         project: "Question Hub",
         description: "Uma plataforma educativa online para criação de questões, criada como trabalho de conclusão de curso(TCC)",
-        link: "https://github.com/LailsonSantana/question_hub",
+        link: "https://github.com/LailsonSantana/question_hub.",
         icon: <QuizIcon fontSize="large" className="text-white" />,
         finishedDate: "20/04/2025",
         image: "questionhub.png"
     },
     {
         project : "Fluxograma Interativo",
-        description : "Um fluxograma interativo para verificação de disciplinas e pré requisitos",
+        description : "Um fluxograma interativo para verificação de disciplinas e pré requisitos do curso de Ciência da Computação - UESB.",
         link: "https://github.com/LailsonSantana/interactive-flowchart",
         icon: <AccountTreeIcon fontSize="large" className="text-white" />,
         finishedDate: "01/03/2025",
@@ -39,7 +39,7 @@ const items = [
     },
     {
         project : "Jogo de Apostas",
-        description : "Um jogo construído com o objetivo de aplicar o conceito de threads em java",
+        description : "Um jogo construído com o objetivo de aplicar o conceito de threads em java.",
         link: "https://github.com/LailsonSantana/Programacao_Concorrente/tree/main/pc_trabalho05_201911924",
         icon: <CasinoIcon fontSize="large" className="text-white" />,
         finishedDate: "23/05/2021",
@@ -71,9 +71,9 @@ const Project: React.FC<ProjectProps> = () => {
         emblaApi?.scrollNext();
     }
     return(
-        <section id="projects" className="bg-[#010F22] p-12 text-white">
+        <section id="projects" className="bg-[#010F22] p-2 lg:p-4 text-white flex flex-col">
             <SectionTitle section="Projetos"/>
-            <div className="relative mt-12">
+            <div className="relative mt-12 mx-12">
             <div className="overflow-hidden " ref={emblaRef}>
                 <div className="flex">
                     {items.map((item, index) => (
@@ -94,8 +94,8 @@ const Project: React.FC<ProjectProps> = () => {
                                     </div>
                                 </div>
 
-                                <div className="rounded-md flex items-center justify-center">
-                                    <img src={item.image} className="rounded-md shadow-2xl max-w-full max-h-60 object-contain"/>
+                                <div className="rounded-md flex items-center justify-center px-2">
+                                    <img src={item.image} className="rounded-md shadow-3xl max-w-full max-h-60 object-contain border border-gray-900"/>
                                 </div>
 
                                 <div className="border-t border-gray-700 pt-4 flex items-center justify-between" >

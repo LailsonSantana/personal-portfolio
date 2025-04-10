@@ -14,7 +14,7 @@ interface SkillsProps{
 
 const Skills: React.FC<SkillsProps> = () => {
     return(
-        <section id="skills" className="bg-[#010F22] p-4 text-white">
+        <section id="skills" className="bg-[#010F22] px-4 pt-16 text-white flex flex-col">
             <SectionTitle section="Habilidades"/>
 
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 place-items-center mt-12 font-thin text-lg">

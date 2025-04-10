@@ -42,8 +42,8 @@ const Teste: React.FC<TesteProps> = () => {
 
             <div className="flex flex-col p-8 items-end">
                 <div className="flex flex-col">
-                    <h1 className="text-white text-center text-sm lg:text-lg font-thin">"A motivação te faz dar o primeiro passo,</h1>
-                    <h1 className="text-white text-center text-sm lg:text-lg font-thin">e a disciplina te leva a continuar e obter sucesso naquilo que você iniciou"</h1>
+                    <h1 className="text-white text-center text-sm lg:text-lg font-thin">Aprendendo a construir e transformar códigos em soluções</h1>
+                    <h1 className="text-white text-center text-sm lg:text-lg font-thin">em um mundo digital, dinâmico e conectado.  </h1>
                 </div>
             </div>
         </div>

@@ -14,16 +14,14 @@ interface InformationProps{
 // Foco no desenvolvimento contínuo
 const Information: React.FC<InformationProps> = () => {
     return(
-        <section id="Information" className="flex flex-col overflow-hidden bg-[#E6E5DE] p-12 text-black">
+        <section id="Information" className="bg-[#E6E5DE] p-4 pt-12 text-black flex flex-col">
             <SectionTitle section="Mais Informações"/>
 
-            
+                <div className="p-16">
                 <div className="flex items-center">
-                
-
-                <h2 className="font-medium text-4xl">
-                    Objetivos 
-                </h2>
+                    <h2 className="font-medium text-4xl">
+                        Objetivos 
+                    </h2>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center border-b-2 p-4 text-black text-2xl font-thin">
@@ -124,6 +122,7 @@ const Information: React.FC<InformationProps> = () => {
                                 </li>
                             </ul>
                     </div>
+                </div>
                 </div>
         </section>
     )
