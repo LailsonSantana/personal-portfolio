@@ -14,10 +14,10 @@ interface SkillsProps{
 
 const Skills: React.FC<SkillsProps> = () => {
     return(
-        <section id="skills" className="bg-[#010F22] px-4 pt-16 text-white flex flex-col">
+        <section id="skills" className="bg-[#010F22] p-4 pt-16 text-white flex flex-col">
             <SectionTitle section="Habilidades"/>
 
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 place-items-center mt-12 font-thin text-lg">
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 place-items-center mt-12 font-thin text-lg">
                 <div>
                     <h1 className="mb-2 font-semibold">Backend</h1>
                     <li>Java</li>
@@ -34,6 +34,12 @@ const Skills: React.FC<SkillsProps> = () => {
                     <h1 className="mb-2 font-semibold">DevOps</h1>
                     <li>Git e Github</li>
                     <li>Postgre SQL</li>
+                    <li>Docker</li>
+                </div>
+                <div>
+                    <h1 className="mb-2 font-semibold">Outros</h1>
+                    <li>WordPress</li>
+                    <li>Excel</li>
                     <li>Docker</li>
                 </div>
             </div>

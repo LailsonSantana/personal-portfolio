@@ -23,6 +23,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  overflow-x: hidden;
+  scrollbar-color: #f2f1f1;
+
 }
 
 @keyframes star-movement-bottom {
@@ -60,6 +63,28 @@ body {
 @layer utilities {
   .animate-marquee {
     animation: marquee 20s linear infinite;
+  }
+
+  /* Largura da scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px; 
+  }
+
+  /* Cor do trilho */
+  ::-webkit-scrollbar-track {
+    background: #010F22; 
+  }
+
+  /* Cor da barrinha */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 8px;
+    min-height: 40px; 
+  }
+
+  /* Hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
   }
 }
 

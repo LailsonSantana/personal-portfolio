@@ -6,7 +6,7 @@ interface TesteProps{
 
 }
 
-const Teste: React.FC<TesteProps> = () => {
+const Home: React.FC<TesteProps> = () => {
     return(
         <div  className="flex flex-col bg-[#010F22] w-screen h-screen border-white border-t-2">
             <section id="home" className="grid grid-cols-1 lg:flex items-center justify-center m-auto place-items-center">
@@ -51,4 +51,4 @@ const Teste: React.FC<TesteProps> = () => {
     )
 }
 
-export default Teste;
+export default Home;

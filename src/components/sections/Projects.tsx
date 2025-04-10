@@ -40,7 +40,7 @@ const items = [
     {
         project : "Jogo de Apostas",
         description : "Um jogo construído com o objetivo de aplicar o conceito de threads em java.",
-        link: "https://github.com/LailsonSantana/Programacao_Concorrente/tree/main/pc_trabalho05_201911924",
+        link: "https://github.com/LailsonSantana/Jogo_de_Apostas",
         icon: <CasinoIcon fontSize="large" className="text-white" />,
         finishedDate: "23/05/2021",
         image: "front.png"
