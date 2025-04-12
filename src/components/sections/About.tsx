@@ -1,7 +1,6 @@
 import SectionTitle from "../SectionTitle";
 import CodePresentation from "../CodeBlock";
 import DescriptionCode from "../DescriptionCode";
-import InfiniteScroll from "../teste/Rolagem";
 import FlowingMenu from "../teste/FlowingMenu";
 
 interface AboutProps{

@@ -83,12 +83,16 @@ export default function Navbar() {
                         <MenuItem onClick={() => handleSmoothScroll("about")}>
                             <StyledNavLink>Sobre</StyledNavLink>
                         </MenuItem>
-                        <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                            <StyledNavLink>Habilidades</StyledNavLink>
-                        </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("projects")}>
                             <StyledNavLink>Projetos</StyledNavLink>
                         </MenuItem>
+                        <MenuItem onClick={() => handleSmoothScroll("skills")}>
+                            <StyledNavLink>Habilidades</StyledNavLink>
+                        </MenuItem>
+                        <MenuItem onClick={() => handleSmoothScroll("skills")}>
+                            <StyledNavLink>Mais Informações</StyledNavLink>
+                        </MenuItem>
+                        
                     </Menu>
                 </StyledMobileToolbar>
                 <StyledDesktopToolbar variant="regular">
@@ -98,12 +102,16 @@ export default function Navbar() {
                     <MenuItem onClick={() => handleSmoothScroll("about")}>
                         <StyledNavLink>Sobre</StyledNavLink>
                     </MenuItem>
-                    <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                        <StyledNavLink>Habilidades</StyledNavLink>
-                    </MenuItem>
                     <MenuItem onClick={() => handleSmoothScroll("projects")}>
                         <StyledNavLink>Projetos</StyledNavLink>
                     </MenuItem>
+                    <MenuItem onClick={() => handleSmoothScroll("skills")}>
+                        <StyledNavLink>Habilidades</StyledNavLink>
+                    </MenuItem>
+                    <MenuItem onClick={() => handleSmoothScroll("skills")}>
+                            <StyledNavLink>Mais Informações</StyledNavLink>
+                        </MenuItem>
+                    
                 </StyledDesktopToolbar>
             </AppBar>
         </Box >

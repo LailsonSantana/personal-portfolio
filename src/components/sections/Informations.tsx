@@ -16,7 +16,7 @@ const Information: React.FC<InformationProps> = () => {
         <section id="Information" className="bg-[#E6E5DE] p-4 pb-32 pt-16 text-black flex flex-col">
             <SectionTitle section="Mais Informações" />
 
-            <div className="max-w-6xl mx-auto space-y-12 mt-8 font-thin">
+            <div className="max-w-6xl mx-auto space-y-12 mt-8 font-thin flex flex-wrap">
 
                 {/* OBJETIVOS */}
                 <div>

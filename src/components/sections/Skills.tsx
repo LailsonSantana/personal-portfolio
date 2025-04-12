@@ -6,7 +6,12 @@ import BuildIcon from '@mui/icons-material/Build';
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import ContainerSkills from "../containers/ContainerSkills";
-import InfiniteScroll from "../teste/Rolagem";
+import InfiniteScroll from "../teste/AutomaticRoll";
+import { Popover, Tooltip } from "@mui/material";
+import Wrappertech from "../wrapper/Wrappertech";
+
+// Implementar o detalhamento das habilidades , ou seja , o que 
+// você realmente sabe fazer em cada uma delas
 
 interface SkillsProps{
 
@@ -17,34 +22,34 @@ const Skills: React.FC<SkillsProps> = () => {
         <section id="skills" className="bg-[#010F22] p-4 pt-16 text-white flex flex-col">
             <SectionTitle section="Habilidades"/>
 
-            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 place-items-center mt-12 font-thin text-lg">
-                <div>
-                    <h1 className="mb-2 font-semibold">Backend</h1>
-                    <li>Java</li>
-                    <li>Spring Boot</li>
-                    <li>Python</li>
+            <div className="grid grid-cols-2 gap-16 lg:grid-cols-4 place-items-center mt-12 font-thin text-lg">
+                <div className="flex flex-col space-y-4">
+                    <h1 className="text-center mb-4 font-semibold text-2xl">Backend</h1>
+                    <Wrappertech>Java</Wrappertech>
+                    <Wrappertech>Spring Boot</Wrappertech>
+                    <Wrappertech>Python</Wrappertech>
                 </div>
-                <div>
-                    <h1 className="mb-2 font-semibold">Frontend</h1>
-                    <li>HTML e CSS</li>
-                    <li>React</li>
-                    <li>Tailwind</li>
+                <div className="flex flex-col space-y-4">
+                    <h1 className="text-center mb-4 font-semibold text-2xl">Frontend</h1>
+                    <Wrappertech>HTML e CSS</Wrappertech>
+                    <Wrappertech>React</Wrappertech>
+                    <Wrappertech>Tailwind</Wrappertech>
                 </div>
-                <div>
-                    <h1 className="mb-2 font-semibold">DevOps</h1>
-                    <li>Git e Github</li>
-                    <li>Postgre SQL</li>
-                    <li>Docker</li>
+                <div className="flex flex-col space-y-4">
+                    <h1 className="text-center mb-4 font-semibold text-2xl">DevOps</h1>
+                    <Wrappertech>Git e GitHub</Wrappertech>
+                    <Wrappertech>PostgreSQL</Wrappertech>
+                    <Wrappertech>Docker</Wrappertech>
                 </div>
-                <div>
-                    <h1 className="mb-2 font-semibold">Outros</h1>
-                    <li>WordPress</li>
-                    <li>Excel</li>
-                    <li>Docker</li>
+                <div className="flex flex-col space-y-4">
+                    <h1 className="text-center mb-4 font-semibold text-2xl">Outros</h1>
+                    <Wrappertech>WordPress</Wrappertech>
+                    <Wrappertech>Wix</Wrappertech>
+                    <Wrappertech>Excel</Wrappertech>
                 </div>
             </div>
 
-            <div className="mt-8 ">
+            <div className="mt-24">
                 <InfiniteScroll />
             </div>
             
