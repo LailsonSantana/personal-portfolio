@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import '@fontsource/inter';
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -25,7 +26,12 @@ body {
   color: var(--foreground);
   overflow-x: hidden;
   scrollbar-color: #f2f1f1;
+  font-family: 'Dosis', sans-serif;
 
+}
+
+nav {
+  font-family: 'Delius', sans-serif;
 }
 
 @keyframes star-movement-bottom {

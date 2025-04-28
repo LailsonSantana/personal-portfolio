@@ -1,4 +1,12 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { Delius } from "next/font/google";
+
+
+export const delius = Delius({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-delius",
+});
 
 let theme = createTheme({
   palette: {
@@ -10,7 +18,7 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Segoe UI"   //"Segoe UI"
+    fontFamily: `var(${delius.variable})`
   }
 });
 

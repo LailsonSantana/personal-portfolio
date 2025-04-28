@@ -21,7 +21,7 @@ const Information: React.FC<InformationProps> = () => {
                 {/* OBJETIVOS */}
                 <div>
                 <h2 className="text-4xl font-semibold mb-6 text-center text-black">Objetivos</h2>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 m-8">
                     
                     {/* Curto Prazo */}
                     <ContainerInfo>
@@ -73,7 +73,7 @@ const Information: React.FC<InformationProps> = () => {
                 {/* CURSOS */}
                 <div>
                 <h2 className="text-4xl font-semibold mb-6 text-center">Cursos</h2>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 m-8">
 
                     {/* Finalizados */}
                     <ContainerInfo>

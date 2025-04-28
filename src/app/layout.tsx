@@ -7,6 +7,9 @@ import { ThemeProvider } from "@emotion/react";
 import theme from "@/components/theme";
 import { CssBaseline } from "@mui/material";
 import { useEffect, useState } from "react";
+import { Delius } from "next/font/google";
+import { Dosis } from "next/font/google";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +19,18 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const dosis = Dosis({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-lora",
+});
+
+const delius = Delius({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-delius",
 });
 
 {/*export const metadata: Metadata = {
@@ -31,11 +46,11 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider theme={theme}>
-        <CssBaseline />
+      <body className={`${dosis.variable} ${geistMono.variable} antialiased`}>
+        
+        
           {children}
-        </ThemeProvider>
+        
       </body>
     </html>
   );

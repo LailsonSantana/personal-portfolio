@@ -10,7 +10,9 @@ import { styled } from '@mui/material';
 
 export const StyledNavLink = styled("a")(() => ({
     textDecoration: "none",
-    color: "inherit"
+    color: "inherit",
+    fontFamily: "'Dosis', sans-serif",
+    fontSize: "1.25rem",
 }));
 
 export const StyledMobileToolbar = styled(Toolbar)(({ theme }) => ({
@@ -54,7 +56,7 @@ export default function Navbar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="absolute" elevation={10} sx={{ backgroundColor: '#010F22' }}>
+            <AppBar position="absolute" elevation={10} sx={{ backgroundColor: '#010F22'}}>
                 <StyledMobileToolbar>
                     <IconButton
                         size="large"

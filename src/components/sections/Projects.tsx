@@ -14,7 +14,7 @@ const items = [
 
     {
         project : "Portifólio Pessoal",
-        description : "Uma landing page para inclusão de informações profissionais , um portifílio online",
+        description : "Landing page",
         link: "",
         icon: <WebIcon fontSize="large" className="text-white" />,
         finishedDate: "Em andamento",
@@ -23,7 +23,8 @@ const items = [
     },
     {
         project: "Question Hub",
-        description: "Uma plataforma educativa online para criação de questões, criada como trabalho de conclusão de curso(TCC)",
+        //"Uma plataforma educativa online para criação de questões, criada como trabalho de conclusão de curso (TCC)"
+        description: "Plataforma educativa/colaborativa",
         link: "https://github.com/LailsonSantana/question_hub.",
         icon: <QuizIcon fontSize="large" className="text-white" />,
         finishedDate: "20/04/2025",
@@ -31,7 +32,7 @@ const items = [
     },
     {
         project : "Fluxograma Interativo",
-        description : "Um fluxograma interativo para verificação de disciplinas e pré requisitos do curso de Ciência da Computação - UESB.",
+        description : "Matriz curricular iterativa.",
         link: "https://github.com/LailsonSantana/interactive-flowchart",
         icon: <AccountTreeIcon fontSize="large" className="text-white" />,
         finishedDate: "01/03/2025",
@@ -39,7 +40,7 @@ const items = [
     },
     {
         project : "Jogo de Apostas",
-        description : "Um jogo construído com o objetivo de aplicar o conceito de threads em java.",
+        description : "Jogo de apostas.",
         link: "https://github.com/LailsonSantana/Jogo_de_Apostas",
         icon: <CasinoIcon fontSize="large" className="text-white" />,
         finishedDate: "23/05/2021",
@@ -89,22 +90,27 @@ const Project: React.FC<ProjectProps> = () => {
                                             <h3 className="font-bold text-xl my-1 mb-4" >
                                                 {item.project}
                                             </h3>
-                                            <p className="text-gray-400 select-none">{item.description}</p>
+                                            <p className="text-gray-400 select-none text-sm lg:text-md">{item.description}</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="rounded-md flex items-center justify-center px-2">
-                                    <img src={item.image} className="rounded-md shadow-3xl max-w-full max-h-60 object-contain border border-gray-900"/>
+                                    <img src={item.image} className="rounded-md shadow-3xl max-w-full max-h-80 object-contain border border-gray-900"/>
                                 </div>
 
-                                <div className="border-t border-gray-700 pt-4 flex items-center justify-between" >
-                                    <div className="flex items-center gap-2 text-sm ">
-                                        <Calendar className="w-4 h-4" />
-                                        <span>Data de conclusão : {item.finishedDate}</span>
+                                <div className="border-t border-gray-700 pt-4 flex items-center lg:justify-between" >
+                                    <div className="hidden md:flex items-center gap-2 text-sm">
+                                        <Calendar className="w-5 h-5" />
+                                        <div> 
+                                            <span className="font-semibold">Data de conclusão :</span>
+                                            <span> </span>
+                                            <span> {item.finishedDate}</span>
+                                        </div>
                                     </div>
 
-                                    <a href={item.link} className="flex items-center justify-center px-4 py-1 rounded-md">
+                                    
+                                    <a href={item.link} className="flex m-auto items-center justify-center px-4 py-1 rounded-md">
                                         <GitHubIcon fontSize="small" />
                                         <span className="ml-2">Visualizar</span>
                                     </a>
@@ -114,20 +120,20 @@ const Project: React.FC<ProjectProps> = () => {
                     ))}
                 </div>
             </div>
-            
-            <button className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10' 
-                    onClick={scrollPrev}>
-                <ChevronLeft 
-                className="w-6 h-6 text-gray-600 " />
                 
-            </button>
+                <button className='bg-white flex items-center justify-center rounded-full shadow-lg w-8 h-8 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10' 
+                        onClick={scrollPrev}>
+                    <ChevronLeft 
+                    className="w-6 h-6 text-gray-600 " />
+                    
+                </button>
 
-            <button className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10' 
-                    onClick={scrollNext}>   
-                <ChevronRight 
-                className="w-6 h-6 text-gray-600 " />
-                
-            </button>
+                <button className='bg-white flex items-center justify-center rounded-full shadow-lg w-8 h-8 absolute -right-4 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10' 
+                        onClick={scrollNext}>   
+                    <ChevronRight 
+                    className="w-6 h-6 text-gray-600 " />
+                    
+                </button>
             </div>
 
 
