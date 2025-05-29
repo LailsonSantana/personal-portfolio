@@ -12,7 +12,7 @@ const Home: React.FC<HomeProps> = () => {
             <section id="home" className="grid grid-cols-1 lg:flex items-center justify-center m-auto place-items-center">
 
                 <div className="w-50 h-50 lg:w-70 lg:h-70 p-4">
-                    <img src="myphoto.jpeg" className="rounded-full border-2 border-solid border-white"/>
+                    <img src="myphoto.png" className="rounded-full border-2 border-solid border-white"/>
                 </div>
 
                 <div className="flex flex-col items-center p-2 text-white justify-center">
@@ -21,22 +21,24 @@ const Home: React.FC<HomeProps> = () => {
                 <h2 className="text-white text-center text-3xl font-thin lg:text-6xl">Backend Developer</h2>
                     
                     
-                    <div className="flex gap-4 mt-4 p-4">
+                    
+                        <a className="flex gap-4 mt-4 p-4" href="/curriculo.pdf" download>
                         <Button variant="outlined" size="small"
-                        sx={{ fontFamily:'Dosis' , color: 'white', borderColor: 'white', padding:"6px", minWidth: '150px', '&:hover': { borderColor: 'gray.300' } }}
+                        sx={{ fontFamily:'Dosis' , color: 'white', borderColor: 'gray', padding:"6px", minWidth: '150px', '&:hover': { borderColor: 'gray.300' } }}
                         className="flex gap-1 m-auto text-white lg:w-full">
                             <DownloadIcon fontSize="small"/>
                             <span>Download CV</span>
                         </Button>
 
                         <Button variant="outlined" size="small"
-                        sx={{ fontFamily:'Dosis', color: 'white', borderColor: 'white', padding:"6px" , minWidth: '150px', '&:hover': { borderColor: 'gray.300' } }}
+                        sx={{ fontFamily:'Dosis', color: 'white', borderColor: 'gray', padding:"6px" , minWidth: '150px', '&:hover': { borderColor: 'gray.300' } }}
                         className="flex gap-1 m-auto text-white lg:w-full">
                             <EmailIcon fontSize="small"/>
                             <span>Fale comigo</span>
                         </Button>
+                        </a>
 
-                    </div>
+                    
                 </div>
             </section>
 

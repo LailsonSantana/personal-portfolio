@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                             <a href="https://github.com/LailsonSantana" target="_blank" rel="noopener noreferrer">
                                 <GitHubIcon fontSize="large" />
                             </a>
-                            <a href="https://github.com/LailsonSantana" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/5577998751050" target="_blank" rel="noopener noreferrer">
                                 <WhatsAppIcon fontSize="large" />
                             </a>
                             {/*<button className="fixed bottom-0 right-4 z-50 flex flex-col justify-center items-center rounded-full p-2 border border-gray-700 bg-red-500 shadow-md hover:bg-gray-100 transition">

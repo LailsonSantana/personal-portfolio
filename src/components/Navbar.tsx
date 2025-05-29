@@ -11,7 +11,7 @@ import { styled } from '@mui/material';
 export const StyledNavLink = styled("a")(() => ({
     textDecoration: "none",
     color: "inherit",
-    fontFamily: "'Dosis', sans-serif",
+    fontFamily: "Dosis",
     fontSize: "1.25rem",
 }));
 
